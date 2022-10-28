@@ -1,0 +1,42 @@
+{
+  "name": "levit-post-type-block",
+  "version": "1.0.0",
+  "description": "Custom Gutenberg block created by LeverageIT team",
+  "author": {
+    "name": "the LeverageIT team",
+    "email": "info@leverage.it",
+    "url": "https://leverage.it"
+  },
+  "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/illuminealev/swiper-levit-block.git"
+  },
+  "devDependencies": {
+    "@wordpress/block-editor": "^10.2.0",
+    "@wordpress/blocks": "^11.18.0",
+    "@wordpress/components": "^21.2.0",
+    "@wordpress/data": "^7.3.0",
+    "@wordpress/element": "^4.17.0",
+    "@wordpress/env": "^5.4.0",
+    "@wordpress/eslint-plugin": "^13.3.0",
+    "@wordpress/i18n": "^4.19.0",
+    "@wordpress/icons": "^9.10.0",
+    "@wordpress/scripts": "^24.3.0",
+    "classnames": "^2.3.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "npm:wp-prettier@2.6.2"
+  },
+  "prettier": "@wordpress/prettier-config",
+  "scripts": {
+    "start": "wp-scripts start --webpack-copy-php --webpack-src-dir=resources --output-path=assets/blocks",
+    "build": "wp-scripts build --webpack-copy-php --webpack-src-dir=resources --output-path=assets/blocks",
+    "lint:js": "wp-scripts lint-js ./resources",
+    "lint:style": "wp-scripts lint-style ./resources",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update"
+  }
+}

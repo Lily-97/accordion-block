@@ -1,0 +1,43 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./resources/levit-accordion-block/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.levit-accordion-item-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.levit-accordion-item-container .levit-accordion-item-content {
+  height: auto;
+  opacity: 1;
+  transition: 0.5s;
+}
+.levit-accordion-item-container .levit-accordion-item-content.hidden {
+  overflow: hidden;
+  height: 0;
+}
+.levit-accordion-item-container .levit-accordion-item-heading {
+  position: relative;
+}
+.levit-accordion-item-container .levit-accordion-item-heading::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+  line-height: 16px;
+  font-size: 32px;
+}
+.levit-accordion-item-container .levit-accordion-item-heading.active::after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background: black;
+  top: 50%;
+}
+.levit-accordion-item-container .levit-accordion-item-heading.inactive + .levit-accordion-item-content {
+  height: 0;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

@@ -1,0 +1,42 @@
+.levit-accordion-item-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  .levit-accordion-item-content{
+    height: auto;
+    opacity: 1;
+    transition: .5s;
+    &.hidden {
+      overflow: hidden;
+      height: 0;
+    }
+  }
+  .levit-accordion-item-heading {
+    position: relative;
+    &::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      font-weight: bold;
+      line-height: 16px;
+      font-size: 32px;
+    }
+    &.active {
+      &::after {
+        content: "";
+        width: 16px;
+        height: 2px;
+        background: black;
+        top: 50%;
+      }
+    }
+    &.inactive {
+      & + .levit-accordion-item-content {
+        height: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}

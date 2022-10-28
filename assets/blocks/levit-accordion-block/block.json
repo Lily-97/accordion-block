@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "custom/levit-accordion-block",
+  "title": "Accordion",
+  "category": "leverage-it",
+  "description": "An advanced block that allows to create accordion.",
+  "textdomain": "levit-accordion-block",
+  "attributes": {
+    "accordion": {
+      "type": "array",
+      "default": [
+        {
+          "title": "",
+          "description": ""
+        }
+      ]
+    },
+    "containerkey": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "supports": {},
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./style-index.css",
+  "script": "file:./features.js",
+  "style": "file:./style-index.css"
+}
